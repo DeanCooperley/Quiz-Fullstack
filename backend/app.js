@@ -5,7 +5,7 @@ const Product = require('./models/Product');
 require('dotenv').config();
 
 
-const dbUrl = `mongodb+srv://Cedric:${process.env.MONGO_PW}@cluster0.hlospy2.mongodb.net/Quiz?retryWrites=true&w=majority`;
+const dbUrl = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PW}@${process.env.MONGO_HOST}/${process.env.MONGO_DB}?retryWrites=true&w=majority`;
 
 mongoose.connect(`${dbUrl}`,
   { useNewUrlParser: true,

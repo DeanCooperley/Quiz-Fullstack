@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "run-script-os",
+    "test:win32": "echo 'del whatever you want in Windows 32/64'",
+    "test:darwin:linux": "echo 'You can combine OS tags and rm all the things!'",
+    "test:default": "echo 'This will run on any platform that does not have its own script'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.10.0"
+  },
+  "devDependencies": {
+    "run-script-os": "^1.1.6"
+  }
+}
